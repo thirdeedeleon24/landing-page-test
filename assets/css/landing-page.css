@@ -1,0 +1,326 @@
+/*font-family: 'Lato', sans-serif;
+font-family: 'Raleway', sans-serif;*/
+
+* { /*CSS Reset*/
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.clear:after {
+	content: "";
+	clear: both;			
+	display: block;
+}
+
+.container {
+	max-width: 960px; /* So that the layout wont expand extensively in very large display device*/
+	margin: auto;
+}
+
+.header {
+	min-height: 150px;
+	background-color: darkviolet;
+}
+
+.main {
+	min-height: 700px;
+	background-color: lightgrey;
+}
+
+.footer {
+	height: 100px;
+	background-color: skyblue;	
+}
+
+.row:after {
+	/*Prevent Container Collapse*/
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.grid > .clm {
+	height: 1060px;
+	width: 7.33%; /*100% / 12 minus 1% for each horizontal margins*/
+	margin-left: 0.5%;
+	margin-right: 0.5%;
+	background-color: #efefef;
+	opacity: 0.4;
+	padding-top: 530px; /*1060 / 2. This centers the column labels verticaly*/
+	text-align: center;
+	float: left;
+}
+
+.grid {
+	position: relative;
+	top: -960px; /*Whole height of the content area*/
+}
+
+.col-lg-1 {
+	width: 8.33%; /*100 divided by 12*/
+}
+
+.col-lg-2 {
+	width: 16.66%; /*100 divided by 12 * 2*/
+}
+
+.col-lg-3 {
+	width: 25%; /*100/12 * 3*/
+}
+
+.col-lg-4 {
+	width: 33.33%; /*100/12 * 4*/
+}
+
+.col-lg-5 {
+	width: 41.66%; /*100/12 * 5*/
+}
+
+.col-lg-6 {
+	width: 50%; /*100/12 * 6*/
+}
+
+.col-lg-7 {
+	width: 58.33%; /*100/12 * 7*/
+}
+
+.col-lg-8 {
+	width: 66.66%; /*100/12 * 8*/
+}
+
+.col-lg-9 {
+	width: 75%; /*100/12 * 9*/
+}
+
+.col-lg-10 {
+	width: 83.33%; /*100/12 * 10*/
+}
+
+.col-lg-11 {
+	width: 91.66%; /*100/12 * 11*/
+}
+
+.col-lg-12 {
+	width: 100%; /*100/12 * 12*/
+}
+
+.left {
+	height: 700px;
+}
+
+.right {
+	height: 700px;
+}
+
+/*[class*="col"] {*/
+	/*border: 5px solid black;*/
+	/*float: left; */
+	/*lets columns stack horizontally*/
+	/*box-sizing: border-box; */
+	/*Ensures actual width does not exceed sed width*/
+/*}*/
+
+
+
+
+/*#FFA69E;
+#FF7E6B;
+#8C5E58;
+#A9F0D1;
+#FFF7F8;*/
+
+/*002642 Dark Blue
+840032 Dark Red
+E59500 Dark Yellow
+E5DADA Light Cream
+02040F Black*/
+
+header {
+	height: 100px;
+	width: 100%;
+	background-color: #840032;
+}
+
+header nav {
+	float: right;
+}
+
+a {
+	font-family: 'Raleway', sans-serif;
+	text-decoration: none;
+	background-color: #E59500;
+	padding: 5px 10px;
+	color: #002642;
+	font-weight: 600;
+}
+
+.logo h1 {
+	color: #E59500;
+	font-family: 'Raleway', sans-serif;
+	line-height: 100px;
+	margin-left: 50px;
+}
+
+.banner {
+	min-height: 500px;
+	/*background-color: #E5DADA;*/
+	background-image: url(../images/colorful-bg-01.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.icon-holder {
+	margin: 0 auto;
+}
+
+
+
+.information-section {
+	height: 350px;
+	background-color: #E59500;	
+}
+
+footer {
+	height: 75px;
+	background-color: #002642;
+}
+
+footer p {
+	color: #E59500;
+	text-align: center;
+	padding-top: 15px;
+}
+
+
+h3 {
+	font-family: 'Raleway', sans-serif;
+	text-align: center;	
+}
+
+h2 {
+	font-family: 'Raleway', sans-serif;
+	text-align: right;
+	font-size: 5em;	
+	color: #840032;
+	line-height: 90%;
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+}
+
+/*media queries*/
+
+/*tablets*/
+@media only screen and (max-width: 768px) {
+
+	.col-md-1 {
+		width: 8.33%; /*100 divided by 12*/
+	}
+
+	.col-md-2 {
+		width: 16.66%; /*100 divided by 12 * 2*/
+	}
+
+	.col-md-3 {
+		width: 25%; /*100/12 * 3*/
+	}
+
+	.col-md-4 {
+		width: 33.33%; /*100/12 * 4*/
+	}
+
+	.col-md-5 {
+		width: 41.66%; /*100/12 * 5*/
+	}
+
+	.col-md-6 {
+		width: 50%; /*100/12 * 6*/
+	}
+
+	.col-md-7 {
+		width: 58.33%; /*100/12 * 7*/
+	}
+
+	.col-md-8 {
+		width: 66.66%; /*100/12 * 8*/
+	}
+
+	.col-md-9 {
+		width: 75%; /*100/12 * 9*/
+	}
+
+	.col-md-10 {
+		width: 83.33%; /*100/12 * 10*/
+	}
+
+	.col-md-11 {
+		width: 91.66%; /*100/12 * 11*/
+	}
+
+	.col-md-12 {
+		width: 100%; /*100/12 * 12*/
+	}
+
+}
+
+/*Mobile*/
+
+@media only screen and (max-width: 450px) {
+
+	.col-sm-1 {
+		width: 8.33%; /*100 divided by 12*/
+	}
+
+	.col-sm-2 {
+		width: 16.66%; /*100 divided by 12 * 2*/
+	}
+
+	.col-sm-3 {
+		width: 25%; /*100/12 * 3*/
+	}
+
+	.col-sm-4 {
+		width: 33.33%; /*100/12 * 4*/
+	}
+
+	.col-sm-5 {
+		width: 41.66%; /*100/12 * 5*/
+	}
+
+	.col-sm-6 {
+		width: 50%; /*100/12 * 6*/
+	}
+
+	.col-sm-7 {
+		width: 58.33%; /*100/12 * 7*/
+	}
+
+	.col-sm-8 {
+		width: 66.66%; /*100/12 * 8*/
+	}
+
+	.col-sm-9 {
+		width: 75%; /*100/12 * 9*/
+	}
+
+	.col-sm-10 {
+		width: 83.33%; /*100/12 * 10*/
+	}
+
+	.col-sm-11 {
+		width: 91.66%; /*100/12 * 11*/
+	}
+
+	.col-sm-12 {
+		width: 100%; /*100/12 * 12*/
+	}
+
+
+}
